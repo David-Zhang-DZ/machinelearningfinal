@@ -21,7 +21,7 @@ from sklearn.neighbors import (
 import json
 
 # ------------ HYPERPARAMETERS -------------
-BASE_PATH = '../COVID-19/csse_covid_19_data/'
+BASE_PATH = '..\\COVID-19\\csse_covid_19_data\\'
 N_NEIGHBORS = 5
 MIN_CASES = 1000
 NORMALIZE = True
@@ -30,7 +30,7 @@ NORMALIZE = True
 confirmed = os.path.join(
     BASE_PATH, 
     'csse_covid_19_time_series',
-    'time_series_19-covid-Confirmed.csv')
+    'time_series_covid19_confirmed_global.csv')
 confirmed = data.load_csv_data(confirmed)
 features = []
 targets = []
